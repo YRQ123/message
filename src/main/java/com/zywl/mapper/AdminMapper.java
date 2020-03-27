@@ -12,10 +12,12 @@ public interface AdminMapper {
     int deleteByExample(AdminExample example);
 
     int deleteByPrimaryKey(Long id);
+	
+	  int insertSelective(Admin record);
 
     int insert(Admin record);
 
-    int insertSelective(Admin record);
+  
 
     List<Admin> selectByExample(AdminExample example);
 
